@@ -1,0 +1,674 @@
+html,
+body {
+  margin: 1 0 auto;
+  background-color: white;
+  height: 100%;
+}
+
+.main {
+  display: flex; /* take up all space to make a sticky footer */
+  background-color: #1e363d; /* colors the background of the container */
+  margin: 0 50px;
+}
+
+
+
+
+/* .flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} */
+
+
+img {
+  max-width: 100%;
+}
+
+
+.row {
+  display: flex; /* places everyinthing in the container as a row rather than a column */
+  width: 100%;
+}
+
+
+.row2{
+  display: flex; /* places everyinthing in the container as a row rather than a column */
+  width: 100%;
+}
+
+
+
+
+/* ///////////////////////////////////////Header section///////////////////////////////////////// */
+
+/* .header-outer {
+  
+  margin-right: 50px;
+  
+} */
+
+ .header-inner {
+  display: flex;
+  align-items: center;
+  /* margin-right: 40px; */
+  justify-content: space-between;
+  margin: 0 50px;
+ 
+  
+} 
+
+
+#name {
+  color: #FF4b4b;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 6px;
+}
+.logo {
+  max-width: 55px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
+  margin-bottom: 5px;
+  
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.nav-list {
+  display: flex; /* places list in a single row instead of a column list*/
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  letter-spacing: 6px;
+  justify-content: space-between; /* add space between the list items */
+  width: 50%;
+  margin-right: 10px;
+  
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list a:hover {
+  text-decoration: none;
+  color: #ff4b4b;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  
+  
+}
+
+/* //////////////////////////////////////////////////Hero content/ INDEX.HTML PAGE //////////////////////////////////////////////////////// */
+
+
+
+.hero h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 75px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.hero p {
+  padding-bottom: 30px;
+  margin: 0;
+  font-size: 10vw;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+  color: #ff4b4b;
+  line-height: 100%;
+  
+}
+
+.hero-img {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  -webkit-animation: img .5s both;
+  animation: img .5s both;
+  position: relative;
+  bottom: 0;
+  
+}
+
+@-webkit-keyframes img {
+ 
+ 
+}
+@keyframes img {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn {
+  color: #ff4b4b;
+  text-align: center;
+  background: white;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 4px;
+  width: 200px;
+  font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  position: relative;
+}
+@keyframes glowing {
+  0% {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px white;
+  }
+  50% {
+    background-color: white;
+    box-shadow: 0 0 20px white;
+  }
+  100% {
+    background-color: white;
+    
+    box-shadow: 0 0 5px white;
+  }
+}
+.btn {
+  animation: glowing 1400ms infinite;
+}
+.btn:hover{
+  color: black;
+}
+
+
+
+/* //////////////////////////////////////////FOOTER SECTION/////////////////////////////////////// */
+
+.footer {
+  flex-shrink: 0;
+}
+
+.footer-list {
+  display: flex;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+    
+}
+
+.text{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social {
+  max-width: 24px;
+  margin-left: 20px;
+  transition: transform 0.2s; /* Animation */
+  cursor: pointer;
+}
+.social:hover {
+  transform: scale(1.5);
+}
+
+/* /////////////////////////////////////////////////ABOUT PAGE////////////////////////////////////////////////// */
+
+/* .aboutMain {
+  flex: 1 0 auto; take up all space to make a sticky footer
+  background-color: #1e363d; colors the background of the container
+
+} */
+
+.head {
+  width: 850px;
+}
+
+.aboutImage {
+  border-right: dotted #ff4b4b;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  max-width: 40vw;
+
+}
+.AboutSection {
+  margin: 30px;
+  max-width: 50vw;
+}
+
+.about {
+  font-size: 8vw;
+  color: #ff4b4b;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 15px;
+  -webkit-animation: about .5s both;
+  animation: about .5s both;
+  line-height: 0%;
+  padding-bottom: 10px;
+  padding-top: 100px;
+}
+
+  @keyframes about {
+    0% {
+      opacity: 0;
+      transform: translatex(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+
+.aboutMe {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  -webkit-animation: about .5s both;
+  animation: about .5s both;
+  line-height: 120%;
+}
+
+
+@keyframes about {
+    0% {
+      opacity: 0;
+      transform: translatex(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+
+
+
+.cvDowmload {
+  display: inline-flex;
+  height: 50px;
+  max-width: 100%;
+  padding: 0;
+  margin-right: 5px;
+  margin-left: 10px;
+  background: #ff4b4b;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500px;
+  cursor: pointer;
+  -webkit-animation: about .5s both;
+  animation: about .5s both;
+}
+
+
+
+.button__text,
+.button__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: white;
+  height: 100%;
+}
+
+
+.button__icon:hover{
+    color: black;
+}
+
+.button__icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.09);
+}
+
+
+.Aboutsocial {
+  max-width: 30px;
+ margin-right: 100px;
+  transition: transform 0.2s; /* Animation */
+  cursor: pointer;
+  justify-content: flex-start;
+
+}
+.Aboutsocial:hover {
+  transform: scale(1.5);
+}
+
+
+
+/* /////////////////////////////////////////////////////// PROJECT PAGE //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+.flex-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+  gap: 10px;
+  background-color: #1e363d;
+  
+  
+}
+
+img:hover {
+  transition: filter 0.5s ease-in-out;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+ul.flex-list li {
+  flex: 0 400px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 5px;
+}
+
+
+ul.flex-list p {
+  padding-bottom: 4px;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  color: black;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  border-radius: 5px;
+ 
+}
+
+ul.flex-list p:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #ff4b4b;
+  
+}
+
+ul.flex-list li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  transition: filter 0.5s ease-in-out;
+}
+
+/*Floating Back-To-Top Button*/
+#toTop {
+  position: fixed;
+  bottom: 2px;
+ 
+  max-width: 30px;
+  width: 100%;
+  border-color: black;
+  background-color:white;
+  border-radius: 4px;
+  
+
+}
+/*On Hover Color Change*/
+#toTop:hover {
+  background-color: #FF4b4b;
+  color: black;
+}
+
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+
+
+
+/* ///////////////////////////////////////////////////MEDIA RESPONSIVE DESIGN //////////////////////////////////////// */
+
+
+
+@media screen and (max-width: 768px) {
+  .header-outer {
+    flex-direction: column;
+    padding: 0;
+   }
+
+   .header-inner{
+    margin: 0 20px;
+    justify-content: space-between;
+   
+   }
+   .nav-list{
+    padding:0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 2.5vw;
+   
+   }
+
+   .main {
+    margin: 0 20px;
+   }
+
+   .row{
+    flex-direction: column-reverse;
+   }
+   /* .row2{
+    flex-direction: column-reverse;
+   } */
+
+   .hero h1, .about{
+    font-size: 10vw;
+    margin-top: 5px;
+   }
+
+   .about{
+   padding: 0;
+    
+   }
+
+ 
+   .cvDowmload{
+    height: 40px;
+    
+   }
+
+   .Aboutsocial {
+    max-width: 30px;
+   margin-right: 20px;
+    transition: transform 0.2s; /* Animation */
+    cursor: pointer;
+    justify-content: flex-start;
+  }
+  .Aboutsocial:hover {
+    transform: scale(1.5);
+  }
+  
+
+  
+   /* font size will be 20% of the view width */
+   .hero p{
+    font-size: 20vw;  
+   }
+   .aboutMe{
+    font-size: 20px;
+    
+    
+   }
+
+.aboutImage{
+  /* border-right: none;
+  padding-left: 100px;
+  width: 100%; */
+
+  
+  display: none;
+}
+   .btn{
+    width: 200px;
+   }
+
+   #name{
+    display: none;
+   }
+   .logo{
+    max-width: 30px;
+   }
+
+   
+
+   .col{
+    align-items: center;
+   }
+
+
+   .footer {
+    flex-shrink: 0;
+  }
+  
+  .footer-list {
+    display: flex;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 2.2vw;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+      
+  }
+  
+  .text{
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .social {
+    max-width: 16px;
+    margin-left: 20px;
+    transition: transform 0.2s; /* Animation */
+    cursor: pointer;
+  }
+  .social:hover {
+    transform: scale(1.5);
+  }
+
+  
+  }
+
+
+  /* ////////////////////////////////////////////// Media NotePad ///////////////////////////////////////////////////////////// */
+
+  @media screen and (max-width: 1000px) {
+
+
+    .header-outer {
+      flex-direction: column;
+      padding: 0;
+     }
+  
+     .header-inner{
+      margin: 0 20px;
+      justify-content: flex-start;
+      
+     
+     }
+     .nav-list{
+      padding:0;
+      margin: 0;
+      position: relative;
+      
+     }
+  
+     .main {
+      margin: 0 20px;
+     }
+
+    .row {
+      flex-direction: column-reverse;
+    }
+    
+
+    .col {
+      align-items: center;
+    
+    }
+
+    .aboutImage{
+    /* border-right: none;
+      padding-left: 100px;
+      width: 100%; */
+      display: none;
+     
+    }
+    #name{
+      display: none;
+     }
+
+     .logo{
+      max-width: 35px;
+     }
+
+    .btn{
+      width: 300px;
+      
+     }
+     .hero h1, .about{
+      font-size: 10vw;
+      margin-top: 50px;
+     }
+     .hero p{
+      font-size: 20vw;  
+     }
+
+  .hero-img{
+    max-width: 100%;
+   
+  }
+
+  .about{
+    padding-bottom: 50px;
+    font-size: 50px;
+    padding-top: 0;
+   
+   }
+
+   .Aboutsocial{
+    max-width: 30px;
+    margin-right: 30px;
+   }
+  
+   
+     
+  }
