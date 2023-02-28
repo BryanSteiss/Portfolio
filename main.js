@@ -1,5 +1,5 @@
-const cvDowmload = document.querySelector(".cvDowmload");
+// const cvDowmload = document.querySelector(".cvDowmload");
 
-cvDowmload.addEventListener("click", () => {
-    window.print();
-});
+// cvDowmload.addEventListener("click", () => {
+//     window.print();
+// });
