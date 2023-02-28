@@ -7,7 +7,7 @@ body {
 
 .main {
   display: flex; /* take up all space to make a sticky footer */
-  background-color: #1e363d; /* colors the background of the container */
+  background-color: #133337; /* colors the background of the container */
   margin: 0 50px;
 }
 
@@ -137,8 +137,8 @@ img {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  -webkit-animation: img .5s both;
-  animation: img .5s both;
+  -webkit-animation: img 1s both;
+  animation: img 1s both;
   position: relative;
   bottom: 0;
   
@@ -345,6 +345,7 @@ img {
   transition: transform 0.2s; /* Animation */
   cursor: pointer;
   justify-content: flex-start;
+ 
 
 }
 .Aboutsocial:hover {
@@ -369,7 +370,7 @@ a:hover{
   justify-content: space-around;
   padding: 15px;
   gap: 10px;
-  background-color: #1e363d;
+  background-color: #133337;
   
   
 }
