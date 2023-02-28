@@ -468,7 +468,7 @@ ul.flex-list li:hover {
    }
 
    .header-inner{
-    margin: 0 20px;
+    margin: 0 20px ;
     justify-content: space-between;
    
    }
@@ -477,16 +477,16 @@ ul.flex-list li:hover {
     margin: 0;
     font-weight: bold;
     font-size: 2.5vw;
-   
+
    }
 
-   .main {
+   /* .main {
     margin: 0 20px;
-   }
-
+   } */
+/* 
    .row{
     flex-direction: column-reverse;
-   }
+   } */
    /* .row2{
     flex-direction: column-reverse;
    } */
@@ -496,20 +496,21 @@ ul.flex-list li:hover {
     margin-top: 5px;
    }
 
-   .about{
+   /* .about{
    padding: 0;
     
-   }
+   } */
 
  
    .cvDowmload{
     height: 40px;
     
+    
    }
 
    .Aboutsocial {
     max-width: 30px;
-   margin-right: 20px;
+    margin-right: 20px;
     transition: transform 0.2s; /* Animation */
     cursor: pointer;
     justify-content: flex-start;
@@ -518,28 +519,26 @@ ul.flex-list li:hover {
     transform: scale(1.5);
   }
   
-
+  
   
    /* font size will be 20% of the view width */
    .hero p{
     font-size: 20vw;  
    }
    .aboutMe{
-    font-size: 20px;
+    font-size: 16px;
+    padding-left: 10px;
     
-    
+ 
    }
-
+/* 
 .aboutImage{
-  /* border-right: none;
-  padding-left: 100px;
-  width: 100%; */
 
   
   display: none;
 }
    .btn{
-    width: 200px;
+    width: 100px;
    }
 
    #name{
@@ -553,7 +552,7 @@ ul.flex-list li:hover {
 
    .col{
     align-items: center;
-   }
+   } */
 
 
    .footer {
@@ -564,16 +563,16 @@ ul.flex-list li:hover {
     display: flex;
     text-decoration: none;
     margin-right: 50px;
-    font-size: 2.2vw;
+    font-size: 3.2vw;
     font-family: "Oswald", sans-serif;
     font-weight: bold;
       
   }
   
-  .text{
+  /* .text{
     margin: 0 auto;
     text-align: center;
-  }
+  } */
   
   .social {
     max-width: 16px;
