@@ -429,7 +429,7 @@ ul.flex-list li:hover {
   position: fixed;
   bottom: 2px;
  
-  max-width: 30px;
+  max-width: 20px;
   width: 100%;
   border-color: black;
   background-color:white;
