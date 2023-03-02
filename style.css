@@ -12,15 +12,6 @@ body {
 }
 
 
-
-
-/* .flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-} */
-
-
 img {
   max-width: 100%;
 }
@@ -42,11 +33,6 @@ img {
 
 /* ///////////////////////////////////////Header section///////////////////////////////////////// */
 
-/* .header-outer {
-  
-  margin-right: 50px;
-  
-} */
 
  .header-inner {
   display: flex;
@@ -54,7 +40,6 @@ img {
   /* margin-right: 40px; */
   justify-content: space-between;
   margin: 0 50px;
- 
   
 } 
 
@@ -230,11 +215,6 @@ img {
 
 /* /////////////////////////////////////////////////ABOUT PAGE////////////////////////////////////////////////// */
 
-/* .aboutMain {
-  flex: 1 0 auto; take up all space to make a sticky footer
-  background-color: #1e363d; colors the background of the container
-
-} */
 
 .head {
   width: 850px;
@@ -260,7 +240,7 @@ img {
   -webkit-animation: about .5s both;
   animation: about .5s both;
   line-height: 0%;
-  padding-bottom: 10px;
+  padding-bottom: px;
   padding-top: 100px;
 }
 
@@ -275,15 +255,15 @@ img {
     }
   }
 
-.aboutMe {
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  -webkit-animation: about .5s both;
-  animation: about .5s both;
-  line-height: 120%;
-}
+  .aboutMe {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    -webkit-animation: about .5s both;
+    animation: about .5s both;
+    line-height: 120%;
+  }
 
 
 @keyframes about {
@@ -347,9 +327,9 @@ img {
   transition: transform 0.2s; /* Animation */
   cursor: pointer;
   justify-content: flex-start;
- 
-
 }
+
+
 .Aboutsocial:hover {
   transform: scale(1.5);
 }
@@ -358,7 +338,7 @@ img {
 
 /* /////////////////////////////////////////////////////// PROJECT PAGE //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-a{
+a {
     color: black;
 }
 
@@ -428,15 +408,14 @@ ul.flex-list li:hover {
 #toTop {
   position: fixed;
   bottom: 2px;
- 
   max-width: 20px;
   width: 100%;
   border-color: black;
   background-color:white;
   border-radius: 4px;
-  
-
 }
+
+
 /*On Hover Color Change*/
 #toTop:hover {
   background-color: #FF4b4b;
@@ -465,40 +444,43 @@ ul.flex-list li:hover {
 
 @media screen and (max-width: 768px) {
   .header-outer {
-    flex-direction: column;
     padding: 0;
    }
 
-   .header-inner{
-    margin: 0 20px ;
-    justify-content: space-between;
-   
-   }
+.AboutSection{
+  justify-content: center;
+  align-items: center;
+}
+
+
    .nav-list{
+    flex: 1;
     padding:0;
-    margin: 0;
-    font-weight: bold;
+    margin: 0px;
+    font-weight:bolder;
     font-size: 2.5vw;
-
    }
 
-   /* .main {
+   .nav-list a {
+    color: black ! important;
+    
+   }
+
+   .main {
     margin: 0 20px;
-   } */
-/* 
+   }
+
    .row{
     flex-direction: column-reverse;
-   } */
-   /* .row2{
-    flex-direction: column-reverse;
-   } */
+   } 
+   
 
    .hero h1, .about{
     font-size: 10vw;
     margin-top: 5px;
    }
 
-   /* .about{
+    .about{ 
    padding: 0;
     
    } */
@@ -533,7 +515,7 @@ ul.flex-list li:hover {
     
  
    }
-/* 
+
 .aboutImage{
 
   
@@ -554,7 +536,7 @@ ul.flex-list li:hover {
 
    .col{
     align-items: center;
-   } */
+   }
 
 
    .footer {
@@ -571,10 +553,9 @@ ul.flex-list li:hover {
       
   }
   
-  /* .text{
+  .text{
     margin: 0 auto;
-    text-align: center;
-  } */
+  }
   
   .social {
     max-width: 16px;
@@ -597,7 +578,7 @@ ul.flex-list li:hover {
 
     .header-outer {
       flex-direction: column;
-      padding: 0;
+      
      }
   
      .header-inner{
@@ -628,9 +609,6 @@ ul.flex-list li:hover {
     }
 
     .aboutImage{
-    /* border-right: none;
-      padding-left: 100px;
-      width: 100%; */
       display: none;
      
     }
@@ -654,10 +632,10 @@ ul.flex-list li:hover {
       font-size: 20vw;  
      }
 
-  .hero-img{
-    max-width: 100%;
+      .hero-img{
+      max-width: 100%;
    
-  }
+    }
 
   .about{
     padding-bottom: 50px;
@@ -666,11 +644,11 @@ ul.flex-list li:hover {
    
    }
 
-   .Aboutsocial{
-    max-width: 30px;
-    margin-right: 30px;
-   }
-  
-   
-     
-  }
+    .Aboutsocial{
+      max-width: 30px;
+      margin-right: 30px;
+    }
+    
+    
+      
+    }
