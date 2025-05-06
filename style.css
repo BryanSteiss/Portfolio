@@ -7,7 +7,7 @@ body {
 
 .main {
   display: flex; /* take up all space to make a sticky footer */
-  background-color: #133337; /* colors the background of the container */
+  background-color: #f6f8f8; /* colors the background of the container */
   margin: 0 50px;
 }
 
