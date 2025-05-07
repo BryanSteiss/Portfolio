@@ -7,7 +7,7 @@ body {
 
 .main {
   display: flex; /* take up all space to make a sticky footer */
-  background-color: #f6f8f8; /* colors the background of the container */
+  background-color: #F6EEE3; /* colors the background of the container */
   margin: 0 50px;
 }
 
@@ -103,10 +103,9 @@ img {
 .hero h1 {
   padding: 0;
   margin: 0;
-  font-size: 75px;
+  font-size: 55px;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  color: white;
+  color: #232b2b;
 }
 
 .hero p {
@@ -115,7 +114,7 @@ img {
   font-size: 10vw;
   font-family: "Oswald", sans-serif;
   font-weight: bolder;
-  color: #ff4b4b;
+  color: #232b2b;
   line-height: 100%;
   
 }
@@ -123,9 +122,9 @@ img {
 .hero-img {
   padding: 0;
   margin: 0;
-  max-width: 100%;
-  -webkit-animation: img 2s both;
-  animation: img 2s linear;
+  max-width: 85%;
+  -webkit-animation: img 1s both;
+  animation: img 1s linear;
   position: relative;
   bottom: 0;
   
@@ -147,38 +146,21 @@ img {
 }
 
 .btn {
-  color: #ff4b4b;
+  color: #232b2b;
   text-align: center;
-  background: white;
+  background: #93D7D6;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   text-decoration: none;
   padding-bottom: 4px;
-  width: 200px;
+  width: 150px;
   font-size: 30px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   position: relative;
 }
-@keyframes glowing {
-  0% {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px white;
-  }
-  50% {
-    background-color: white;
-    box-shadow: 0 0 20px white;
-  }
-  100% {
-    background-color: white;
-    
-    box-shadow: 0 0 5px white;
-  }
-}
-.btn {
-  animation: glowing 1400ms infinite;
-}
+
 .btn:hover{
-  color: black;
+  color: #ff4b4b;
 }
 
 
